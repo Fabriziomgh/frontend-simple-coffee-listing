@@ -1,0 +1,13 @@
+---
+import StartFill from './icons/StartFill.astro';
+
+const { rating, votes } = Astro.props;
+---
+
+<div class="flex items-center space-x-2">
+   <StartFill />
+   <span class="text-heading-color">{rating}</span>
+   <span class="text-[#6F757C] font-bold">
+      ({votes} votes)
+   </span>
+</div>
